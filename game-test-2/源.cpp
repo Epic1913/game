@@ -4,6 +4,7 @@
 #include<graphics.h>
 #include<windows.h>
 
+
 //messagebox要用到
 
 //来玩一个井字棋小游戏，刷出一个啤酒就可以下一个子（雾）
@@ -169,9 +170,9 @@ int main()
 
 		DWORD end_time = GetTickCount();
 		DWORD delta_time = end_time - start_time;
-		if (delta_time < 1000 / 60)
+		if (delta_time < 1000 / 240)
 		{
-			Sleep(1000 / 60 - delta_time);
+			Sleep(1000 / 240 - delta_time);
 		}
 	}
 	EndBatchDraw();
